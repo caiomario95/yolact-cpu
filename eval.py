@@ -21,6 +21,7 @@ import cProfile
 import pickle
 import json
 import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 from collections import defaultdict
 from pathlib import Path
 from collections import OrderedDict
@@ -1038,4 +1039,5 @@ if __name__ == '__main__':
             net = net
 
         evaluate(net, dataset)
+
 
