@@ -602,6 +602,8 @@ coco_base_config = Config({
     'mask_dim': None,
 
     # Input image size.
+    
+    'min_size': 200,
     'max_size': 300,
     
     # Whether or not to do post processing on the cpu at test time
